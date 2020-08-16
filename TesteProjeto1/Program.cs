@@ -7,9 +7,9 @@ namespace TesteProjeto1
     {
         static void Main(string[] args)
         {
-            
+
             TelaAbertura.Apresenta();
-            Console.WriteLine("rodou");
+            TelaMenuInicial.Apresenta();
             Console.ReadKey();
         }
     }

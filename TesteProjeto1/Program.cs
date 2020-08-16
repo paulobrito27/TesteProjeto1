@@ -1,5 +1,6 @@
 ﻿using System;
 using TesteProjeto1.Views;
+using TesteProjeto1.Views.Clientes;
 
 namespace TesteProjeto1
 {
@@ -7,7 +8,6 @@ namespace TesteProjeto1
     {
         static void Main(string[] args)
         {
-
             TelaAbertura.Apresenta();
             TelaMenuInicial.Apresenta();
             Console.ReadKey();

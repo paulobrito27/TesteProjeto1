@@ -20,8 +20,15 @@ namespace TesteProjeto1.Views
                 "\t\t\t\t     ##         ##  ##     ###   ###  ##      ##    \n" +
                 "\t\t\t\t     ##         ##   ##    ###   ###  ##     ##     \n" +
                 "\t\t\t\t     #########  ##    ##   #########  ########      \n"+
-                "\n\n\n\n\nEnter para continuar!!"
+                "\n\n\n\n\n\n\n"
             );
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.ReadKey();
             Console.Clear();
 
@@ -29,8 +36,14 @@ namespace TesteProjeto1.Views
 
         private static void Padawan()
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\n\n\n\n\n\n\n\n\n" +
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("\n\n\n\n\n" +
                               "\t\t\t\t\t\t   PROJETO PADAWAN     \n" 
                               );
         }
@@ -50,7 +63,7 @@ namespace TesteProjeto1.Views
             for (int ctr = start; ctr <= end; ctr++)
             {
                 if (changeColor)
-                    Console.BackgroundColor = ConsoleColor.DarkCyan;
+                    Console.BackgroundColor = ConsoleColor.White;
                 Console.WriteLine(new String(Convert.ToChar(" "), 30));
             }
         }

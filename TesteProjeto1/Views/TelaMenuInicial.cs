@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace TesteProjeto1.Views
 {
@@ -30,9 +29,16 @@ namespace TesteProjeto1.Views
 
                 if (teclaDigitada == enter)
                 {
-                    Console.Clear();
-                    Console.WriteLine($"Navegar para a opção {opcaoEscolha}");
-                    Console.ReadKey();
+                    switch (opcaoEscolha)
+                    {
+                        case 1:
+                            TelaMenuCliente.Apresenta();
+                            break;
+                        
+                    }
+                    //zera contagem da escolha
+                    LimpaTela();
+                    opcaoEscolha = 1;
 
                 }
 
@@ -64,13 +70,13 @@ namespace TesteProjeto1.Views
             Console.Clear();
             Console.WriteLine("\n\n\n\n\n\n\n");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("\t\t\t\tUSE OS BOTÕES DIRECIONAIS PARA NAVEGAR:\n");
+            Console.WriteLine("\t\t\tUSE OS BOTÕES DIRECIONAIS PARA NAVEGAR:\n");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\t\t\t\tOpção 1");
+            Console.WriteLine("\t\t==>\tClientes");
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("\t\t\t\tOpção 2");
-            Console.WriteLine("\t\t\t\tOpção 3");
-            Console.WriteLine("\t\t\t\tOpção 4");
+            Console.WriteLine("\t\t==>\tPedidos");
+            Console.WriteLine("\t\t==>\tHistorico de vendas");
+            Console.WriteLine("\t\t==>\tVendas detalhadas por mês");
         }
 
         private static void Opcao2()
@@ -78,14 +84,14 @@ namespace TesteProjeto1.Views
             Console.Clear();
             Console.WriteLine("\n\n\n\n\n\n\n");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("\t\t\t\tUSE OS BOTÕES DIRECIONAIS PARA NAVEGAR:\n");
+            Console.WriteLine("\t\t\tUSE OS BOTÕES DIRECIONAIS PARA NAVEGAR:\n");
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("\t\t\t\tOpção 1");
+            Console.WriteLine("\t\t==>\tClientes");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\t\t\t\tOpção 2");
+            Console.WriteLine("\t\t==>\tPedidos");
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("\t\t\t\tOpção 3");
-            Console.WriteLine("\t\t\t\tOpção 4");
+            Console.WriteLine("\t\t==>\tHistorico de vendas");
+            Console.WriteLine("\t\t==>\tVendas detalhadas por mês");
         }
 
         private static void Opcao3()
@@ -93,14 +99,14 @@ namespace TesteProjeto1.Views
             Console.Clear();
             Console.WriteLine("\n\n\n\n\n\n\n");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("\t\t\t\tUSE OS BOTÕES DIRECIONAIS PARA NAVEGAR:\n");
+            Console.WriteLine("\t\t\tUSE OS BOTÕES DIRECIONAIS PARA NAVEGAR:\n");
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("\t\t\t\tOpção 1");
-            Console.WriteLine("\t\t\t\tOpção 2");
+            Console.WriteLine("\t\t==>\tClientes");
+            Console.WriteLine("\t\t==>\tPedidos");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\t\t\t\tOpção 3");
+            Console.WriteLine("\t\t==>\tHistorico de vendas");
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("\t\t\t\tOpção 4");
+            Console.WriteLine("\t\t==>\tVendas detalhadas por mês");
         }
 
         private static void Opcao4()
@@ -108,13 +114,13 @@ namespace TesteProjeto1.Views
             Console.Clear();
             Console.WriteLine("\n\n\n\n\n\n\n");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("\t\t\t\tUSE OS BOTÕES DIRECIONAIS PARA NAVEGAR:\n");
+            Console.WriteLine("\t\t\tUSE OS BOTÕES DIRECIONAIS PARA NAVEGAR:\n");
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("\t\t\t\tOpção 1");
-            Console.WriteLine("\t\t\t\tOpção 2");
-            Console.WriteLine("\t\t\t\tOpção 3");
+            Console.WriteLine("\t\t==>\tClientes");
+            Console.WriteLine("\t\t==>\tPedidos");
+            Console.WriteLine("\t\t==>\tHistorico de vendas");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\t\t\t\tOpção 4");
+            Console.WriteLine("\t\t==>\tVendas detalhadas por mês");
         }
 
 
